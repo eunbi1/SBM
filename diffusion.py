@@ -46,7 +46,7 @@ class Diffusion(object):
         self.device = device
 
         self.sde = VPSDE(config.diffusion.alpha, config.diffusion.beta_schedule)
-        self.levy = LevyStable()
+ 
 
     def train(self):
         args, config = self.args, self.config 
