@@ -5,7 +5,7 @@ import scipy
 import numpy as np
 import tqdm 
 
-def sampler(args, config, x, y, model, sde, levy,
+def sampler(args, config, x, y, model, sde, 
                 masked_data=None, mask=None, t0=None, device='cuda'):
     
     if args.sample_type not in ['sde', 'ode', 'sde_imputation']:
