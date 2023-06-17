@@ -347,7 +347,7 @@ class Diffusion(object):
                 else:
                     y = None
                     
-                x = LIM_sampler(args, config, x, y, model, self.sde)
+                x = sampler(args, config, x, y, model, self.sde)
                 x = x.clamp(-1.0, 1.0)
                 x = (x + 1) / 2
 
