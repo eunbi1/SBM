@@ -15,7 +15,6 @@ import copy
 
 
 from models.ddpm import Model
-from models.ncsnpp import NCSNpp
 from models.ema import EMAHelper
 
 from functions.loss import loss_fn
