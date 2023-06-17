@@ -273,10 +273,7 @@ class Diffusion(object):
     def sample(self):
         args, config = self.args, self.config
 
-        if self.config.model.model_type == "ncsnpp":
-            model = NCSNpp(self.config)
-        else:
-            model = Model(self.config)
+        model = Model(self.config)
         
         if args.ddp:
             model = model.to(self.device)
