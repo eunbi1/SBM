@@ -44,7 +44,7 @@ class Diffusion(object):
             )
         self.device = device
 
-        self.sde = VPSDE(config.diffusion.alpha, config.diffusion.beta_schedule)
+        self.sde = VPSDE(config.diffusion.beta_schedule)
  
 
     def train(self):
