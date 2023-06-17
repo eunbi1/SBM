@@ -261,7 +261,7 @@ class Diffusion(object):
                             x = torch.randn(x_shape).to(self.device)
                            
 
-                            x = sampler(args, config, x, y, model, self.sde, self.levy,)
+                            x = sampler(args, config, x, y, model, self.sde)
                             x = (x + 1) / 2
                             x = x.clamp(0.0, 1.0)
                             
